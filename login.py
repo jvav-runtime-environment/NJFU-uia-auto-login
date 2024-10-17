@@ -28,7 +28,7 @@ def get_form_data(html):
     return form_data
 
 
-def uia_login(username, password):
+def uia_login(username: str, password: str) -> dict | None:
     s = requests.Session()  # 会话
 
     s.headers = {
